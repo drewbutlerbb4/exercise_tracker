@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		4C54AA00000000000000001C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C54AA000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C54AA00000000000000000A;
+			remoteInfo = LiftingTracker;
+		};
+		4C54AA00000000000000001D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C54AA000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C54AA00000000000000000A;
+			remoteInfo = LiftingTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C54AA000000000000000007 /* LiftingTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiftingTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C54AA000000000000000008 /* LiftingTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftingTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C54AA000000000000000009 /* LiftingTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftingTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4C54AA000000000000000004 /* LiftingTracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LiftingTracker;
+			sourceTree = "<group>";
+		};
+		4C54AA000000000000000005 /* LiftingTrackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LiftingTrackerTests;
+			sourceTree = "<group>";
+		};
+		4C54AA000000000000000006 /* LiftingTrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LiftingTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C54AA000000000000000014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C54AA000000000000000017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C54AA00000000000000001A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C54AA000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				4C54AA000000000000000004 /* LiftingTracker */,
+				4C54AA000000000000000005 /* LiftingTrackerTests */,
+				4C54AA000000000000000006 /* LiftingTrackerUITests */,
+				4C54AA000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C54AA000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C54AA000000000000000007 /* LiftingTracker.app */,
+				4C54AA000000000000000008 /* LiftingTrackerTests.xctest */,
+				4C54AA000000000000000009 /* LiftingTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C54AA00000000000000000A /* LiftingTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C54AA000000000000000021 /* Build configuration list for PBXNativeTarget "LiftingTracker" */;
+			buildPhases = (
+				4C54AA000000000000000013 /* Sources */,
+				4C54AA000000000000000014 /* Frameworks */,
+				4C54AA000000000000000015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4C54AA000000000000000004 /* LiftingTracker */,
+			);
+			name = LiftingTracker;
+			packageProductDependencies = (
+			);
+			productName = LiftingTracker;
+			productReference = 4C54AA000000000000000007 /* LiftingTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C54AA00000000000000000B /* LiftingTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C54AA000000000000000022 /* Build configuration list for PBXNativeTarget "LiftingTrackerTests" */;
+			buildPhases = (
+				4C54AA000000000000000016 /* Sources */,
+				4C54AA000000000000000017 /* Frameworks */,
+				4C54AA000000000000000018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C54AA00000000000000001E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4C54AA000000000000000005 /* LiftingTrackerTests */,
+			);
+			name = LiftingTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = LiftingTrackerTests;
+			productReference = 4C54AA000000000000000008 /* LiftingTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C54AA00000000000000000C /* LiftingTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C54AA000000000000000023 /* Build configuration list for PBXNativeTarget "LiftingTrackerUITests" */;
+			buildPhases = (
+				4C54AA000000000000000019 /* Sources */,
+				4C54AA00000000000000001A /* Frameworks */,
+				4C54AA00000000000000001B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C54AA00000000000000001F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4C54AA000000000000000006 /* LiftingTrackerUITests */,
+			);
+			name = LiftingTrackerUITests;
+			packageProductDependencies = (
+			);
+			productName = LiftingTrackerUITests;
+			productReference = 4C54AA000000000000000009 /* LiftingTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C54AA000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					4C54AA00000000000000000A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					4C54AA00000000000000000B = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 4C54AA00000000000000000A;
+					};
+					4C54AA00000000000000000C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 4C54AA00000000000000000A;
+					};
+				};
+			};
+			buildConfigurationList = 4C54AA000000000000000020 /* Build configuration list for PBXProject "LiftingTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C54AA000000000000000002;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4C54AA000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C54AA00000000000000000A /* LiftingTracker */,
+				4C54AA00000000000000000B /* LiftingTrackerTests */,
+				4C54AA00000000000000000C /* LiftingTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C54AA000000000000000015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C54AA000000000000000018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C54AA00000000000000001B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C54AA000000000000000013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C54AA000000000000000016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C54AA000000000000000019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C54AA00000000000000001E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C54AA00000000000000000A /* LiftingTracker */;
+			targetProxy = 4C54AA00000000000000001C /* PBXContainerItemProxy */;
+		};
+		4C54AA00000000000000001F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C54AA00000000000000000A /* LiftingTracker */;
+			targetProxy = 4C54AA00000000000000001D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4C54AA000000000000000024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C54AA000000000000000025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C54AA000000000000000026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lifting Tracker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiftingTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4C54AA000000000000000027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lifting Tracker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiftingTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4C54AA000000000000000028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiftingTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiftingTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiftingTracker";
+			};
+			name = Debug;
+		};
+		4C54AA000000000000000029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiftingTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiftingTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiftingTracker";
+			};
+			name = Release;
+		};
+		4C54AA00000000000000002A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiftingTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = LiftingTracker;
+			};
+			name = Debug;
+		};
+		4C54AA00000000000000002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiftingTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = LiftingTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C54AA000000000000000020 /* Build configuration list for PBXProject "LiftingTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C54AA000000000000000024 /* Debug */,
+				4C54AA000000000000000025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C54AA000000000000000021 /* Build configuration list for PBXNativeTarget "LiftingTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C54AA000000000000000026 /* Debug */,
+				4C54AA000000000000000027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C54AA000000000000000022 /* Build configuration list for PBXNativeTarget "LiftingTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C54AA000000000000000028 /* Debug */,
+				4C54AA000000000000000029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C54AA000000000000000023 /* Build configuration list for PBXNativeTarget "LiftingTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C54AA00000000000000002A /* Debug */,
+				4C54AA00000000000000002B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C54AA000000000000000001 /* Project object */;
+}
