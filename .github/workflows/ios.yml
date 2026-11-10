@@ -1,0 +1,73 @@
+name: iOS build and test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      PROJECT: LiftingTracker.xcodeproj
+      SCHEME: LiftingTracker
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Pick an iPhone simulator
+        run: |
+          UDID=$(xcrun simctl list devices available | grep 'iPhone' | head -n 1 | grep -oE '[0-9A-F]{8}(-[0-9A-F]{4}){3}-[0-9A-F]{12}')
+          if [ -z "$UDID" ]; then
+            echo "No iPhone simulator is available on this runner."
+            xcrun simctl list devices available
+            exit 1
+          fi
+          echo "Using simulator $UDID"
+          echo "DESTINATION=platform=iOS Simulator,id=$UDID" >> "$GITHUB_ENV"
+
+      - name: Build
+        run: |
+          set -o pipefail
+          xcodebuild build-for-testing \
+            -project "$PROJECT" -scheme "$SCHEME" \
+            -destination "$DESTINATION" \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO | tee build.log | xcbeautify
+
+      - name: Unit tests
+        run: |
+          set -o pipefail
+          xcodebuild test-without-building \
+            -project "$PROJECT" -scheme "$SCHEME" \
+            -destination "$DESTINATION" \
+            -derivedDataPath build \
+            -only-testing:LiftingTrackerTests \
+            -resultBundlePath results/unit.xcresult | tee unit.log | xcbeautify
+
+      - name: UI test
+        run: |
+          set -o pipefail
+          xcodebuild test-without-building \
+            -project "$PROJECT" -scheme "$SCHEME" \
+            -destination "$DESTINATION" \
+            -derivedDataPath build \
+            -only-testing:LiftingTrackerUITests \
+            -resultBundlePath results/ui.xcresult | tee ui.log | xcbeautify
+
+      - name: Upload logs and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcode-logs
+          path: |
+            *.log
+            results
+          if-no-files-found: ignore
